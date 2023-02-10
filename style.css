@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto' ;
+}
+
+body{
+    height: 100vh;
+    color: white;
+    animation: bgcolor infinite 50s;     /* TO EXPERIENCE MULTIPLE COLORS */
+}
+
+header{
+    height: 15%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato';
+}
+
+header .right{
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 60%;
+}
+
+header .right ul{
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-around;
+}
+
+header .right ul li{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 2rem;
+    font-family: 'Lato';
+}
+
+header .left{
+    display: flex;
+    justify-content: flex-start;
+    height: 5vh;
+    width: 20%;
+    align-items: center;
+    position: absolute;
+}
+
+header .left img{
+    height: 2.3rem;
+    align-items: center;
+    padding-left: 5rem;
+    pointer-events: none;
+}
+
+header .left span{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: large;
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+main{
+    height: 70%;
+    display: flex;
+}
+
+/* LEFT section CSS */
+
+main .left{
+    height: 20vh;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 70% auto;
+}
+
+main .left h1{
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Lato';
+}
+
+main .left .bottom .details {
+    height: 90%;
+    display: flex;
+    font-size: 3rem;
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+main .left .bottom ul{
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+}
+
+main .left .bottom .approval{
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    display: inline;
+    position: relative;
+    pointer-events: none;
+}
+
+main .left .bottom .features{
+    display: inline;
+    font-family: 'Lato';
+    font-size: larger;
+    padding-top: 12px;
+}
+
+/* RIGHT section CSS */
+
+main .right{
+    display: grid;
+    grid-template-rows: 80% auto;
+    width: 50%;
+    align-items: center;
+}
+
+main .right .top{
+    display: flex;
+    align-items: center;
+    
+}
+
+main .right .top img{
+    height: 25rem;
+    padding: 0;
+    pointer-events: none;
+}
+
+main .right .top p{
+    font-family: 'Lato';
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    writing-mode: vertical-rl;
+    color: white;
+}
+
+footer{
+    background: white;
+    color: black;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .img{
+    height: 70%;
+    margin-inline: 2%;
+    pointer-events: none;
+}
+
+footer .img-detail{
+    height: 90;
+    font-weight: lighter;
+    font-family: 'Lato';
+    font-size: 3rem;
+}
+
+footer .one{
+    width: 33%;
+    border-right: 6px solid black;
+    height: 80%;
+    margin-top: 1%;
+}
+
+footer .two{
+    width: 34%;
+    border-right: 6px solid black;
+    height: 80%;
+    margin-top: 1%;
+}
+
+footer .three{
+    width: 33%;
+    border-right: 6px solid black;
+    height: 80%;
+    margin-top: 1%;
+}
+
+
+@keyframes bgcolor{
+    0%{
+        background:  #351F39 ;
+    }
+    20%{
+        background:  #726A95 ;
+    }
+    40%{
+        background:  #16213E ;
+    }
+    80%{
+        background:  #A0C1B8 ;
+    }
+    100%{
+        background:  #1B2430 ;
+    }
+}
